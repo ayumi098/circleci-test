@@ -28,3 +28,9 @@ workflows:
     jobs: # 実行するジョブをここにリストします
       - one
       - two
+  onle_one: # ワークフローの名前
+    jobs: # 実行するジョブをここにリストします
+      - one
+      filters:
+          branches:
+            only: main
