@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs: # 今回は 2 つのジョブを用意し、ワークフロー機能でジョブの調整を行います。
   one: # 1 つ目のジョブ
     docker: # Docker Executor を使用します。
@@ -28,8 +28,8 @@ workflows:
     jobs: # 実行するジョブをここにリストします
       - one
       - two
-  onle_one: # ワークフローの名前
-    jobs: # 実行するジョブをここにリストします
+  onle_one:
+    jobs:
       - one
           filters:
             branches:
