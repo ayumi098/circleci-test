@@ -30,7 +30,7 @@ workflows:
       - two
   onle_one:
     jobs:
-      - one
+      - one:
           filters:
             branches:
               only: main
