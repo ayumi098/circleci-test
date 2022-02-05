@@ -28,7 +28,7 @@ workflows:
     jobs: # 実行するジョブをここにリストします
       - one
       - two
-  onle_one:
+  only_one:
     jobs:
       - one:
           filters:
